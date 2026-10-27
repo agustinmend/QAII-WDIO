@@ -54,19 +54,17 @@ exports.config = {
         browserName: 'chrome',
         'goog:chromeOptions': {
             args: [
-                '--disable-infobars',   // Quitar "Chrome está siendo controlado..."
-                '--disable-extensions', // Deshabilitar extensiones
-                '--start-maximized' ,    // Maximizar ventana
-                'enable-automation',
-                '--disable-blink-features=AutomationControlled'
+                '--disable-infobars',
+                '--disable-extensions',
+                '--start-maximized',
+                '--disable-blink-features=AutomationControlled',
+
+                // Recomendado para Jenkins
+                '--headless=new',
+                '--window-size=1920,1080'
             ]
-        },
-        // Configuración de la ruta fija del ejecutable del driver
-        'wdio:chromedriverOptions': {
-            binary: 'D:/Agustin/Universidad/6to semestre/QA II/examen 1er bloque/node_modules/chromedriver/lib/chromedriver/chromedriver.exe'
         }
-    },
-],
+    }],
 
     //
     // ===================
