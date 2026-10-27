@@ -1,0 +1,79 @@
+
+# ========================================
+# NODE.JS - Dependencias
+# ========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ========================================
+# ALLURE - Reportes y resultados
+# ========================================
+allure-results/
+allure-report/
+allure-history/
+.allure/
+
+# ========================================
+# WEBDRIVERIO - Logs y resultados
+# ========================================
+logs/
+*.log
+errorShots/
+screenshots/
+test-results/
+wdio-logs/
+*.log.*
+
+# ========================================
+# CUCUMBER - Reportes
+# ========================================
+cucumber-report/
+cucumber-reports/
+reports/
+
+# ========================================
+# COVERAGE
+# ========================================
+coverage/
+.nyc_output/
+
+# ========================================
+# VARIABLES DE ENTORNO Y CREDENCIALES
+# ========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ========================================
+# ARCHIVOS TEMPORALES
+# ========================================
+tmp/
+temp/
+.cache/
+*.tmp
+
+# ========================================
+# IDE - Visual Studio Code
+# ========================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# ========================================
+# SISTEMA OPERATIVO
+# ========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================================
+# JAVA / JENKINS (si se utilizan)
+# ========================================
+target/
+*.class
