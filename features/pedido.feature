@@ -8,5 +8,5 @@ Feature: Comprar un producto con entrega en nueve días
     And agrego "1" unidades del producto al carrito
     And voy al carrito de compra y verifico el producto "PR002"
     And continúo con el pedido
-    When completo y confirmo la entrega para "Carla Nueva", zona "Villa Aurora", dirección "Calle de prueba 123", fecha "17/10/2026" y franja "morning"
-    Then debería ver el pedido con entrega el "17/10/2026"
+    When completo y confirmo la entrega para "Carla Nueva", zona "Villa Aurora", dirección "Calle de prueba 123", fecha "03/11/2026" y franja "morning"
+    Then debería ver el pedido con entrega el "03/11/2026"

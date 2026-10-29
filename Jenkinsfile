@@ -32,6 +32,14 @@ pipeline {
                 echo "Ejecutando pruebas WDIO..."
                 bat "npx wdio run wdio.conf.js"
             }
+            post {
+                always {
+                    allure(
+                        includeProperties: false,
+                        results: [[path: 'allure-results']]
+                    )
+                }
+            }
         }
 
         stage('Generar reporte Allure') {
